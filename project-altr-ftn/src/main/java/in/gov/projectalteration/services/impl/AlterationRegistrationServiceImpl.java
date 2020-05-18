@@ -131,6 +131,7 @@ try {
 						|| (ReraConstants.UPLOADED).equals(altFormOneDetail.getStatus())
 						|| (ReraConstants.REJECTED).equals(altFormOneDetail.getStatus())
 						)
+					if(null!=altFormOneDetail.getProjectAltrId())
 					l.add(dao.findById(altFormOneDetail.getProjectAltrId()).get());
 			}
 
@@ -183,6 +184,7 @@ catch(Exception e)
 						|| (ReraConstants.UPLOADED).equals(projectFormTwoDetail.getStatus())
 						|| (ReraConstants.REJECTED).equals(projectFormTwoDetail.getStatus())
 						)
+					if(null!=projectFormTwoDetail.getProjectAltrId())
 					l.add(dao.findById(projectFormTwoDetail.getProjectAltrId()).get());
 
 			}
@@ -239,6 +241,7 @@ catch(Exception e)
 						|| (ReraConstants.UPLOADED).equals(projectFormThreeDetail.getStatus())
 						|| (ReraConstants.REJECTED).equals(projectFormThreeDetail.getStatus())
 						)
+					if(null!=projectFormThreeDetail.getProjectAltrId())
 					l.add(dao.findById(projectFormThreeDetail.getProjectAltrId()).get());
 
 			}
@@ -290,6 +293,7 @@ catch(Exception e)
 						|| (ReraConstants.UPLOADED).equals(projectFormThreeDetail.getStatus())
 						|| (ReraConstants.REJECTED).equals(projectFormThreeDetail.getStatus())
 						)
+					if(null!=projectFormThreeDetail.getProjAltId())
 					l.add(dao.findById(projectFormThreeDetail.getProjAltId()).get());
 
 			}
